@@ -60,7 +60,7 @@
     }
 
     &__medium-8--smaller {
-        width: 63%;
+      width: 63%;
     }
 
   }
@@ -91,14 +91,13 @@
     }
 
     &__large-8--smaller {
-        width: 63%;
+      width: 63%;
     }
 
   }
-
-
-  /*Begin Equal Height Rules */
-  &--equal-height-at-medium {
+  
+  /* Begin Equal Height Rules */
+  .flexbox &--equal-height-at-medium {
     @mixin atMedium {
       display: flex;
     }
@@ -107,9 +106,10 @@
       float: none;
       display: flex;
     }
+
   }
 
-  &--equal-height-at-large {
+  .flexbox &--equal-height-at-large {
     @mixin atLarge {
       display: flex;
     }
@@ -118,6 +118,7 @@
       float: none;
       display: flex;
     }
+
   }
 
 }
